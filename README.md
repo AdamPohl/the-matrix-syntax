@@ -1,1 +1,1 @@
-# The Matrix-syntax theme
+# The Matrix - a syntax theme
