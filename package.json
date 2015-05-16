@@ -1,0 +1,11 @@
+{
+  "name": "the--matrix-syntax",
+  "theme": "syntax",
+  "version": "0.1.0",
+  "description": "A syntax theme similar to the matrix theme on cloudsagemath",
+  "repository": "https://github.com/Huaraz2/the--matrix-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=0.174.0"
+  }
+}
