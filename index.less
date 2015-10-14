@@ -5,16 +5,19 @@
 }
 
 .atom-text-editor.is-focused .cursor {
-  border-color: rgb(253, 2, 2);
+  border-color: #fc0303;
 }
 
+// This looks after the word selection.
 .atom-text-editor.is-focused :host, .selection, .region {
   background-color: @syntax-selection-color;
 }
 
+// This looks after the colour of the line you are writing in.
  .atom-text-editor.is-focused, .line.cursor-line {
-  background-color: @syntax-gutter-background-color;
+   background-color: @Caboose;
 }
+
 .atom-text-editor.is-focused, .line-number.cursor-line-no-selection{
   background-color: @syntax-gutter-border-color;
 }
@@ -31,46 +34,46 @@
 
 .entity {
   &.name.type {
-    color: @light-orange;
+    color: @York;
     text-decoration: underline;
   }
 
   &.name.function {
-    color: white;
+    color: @Maine;
   }
 
   &.name.class, &.name.type.class {
-    color: @light-orange;
+    color: @York;
   }
 
   &.name.section {
-    color: white;
+    color: @Maine;
   }
 
   &.name.tag {
-    color: @red;
+    color: @Sarge;
     text-decoration: underline;
   }
 
   &.other.inherited-class {
     font-style: italic;
-    color: @green;
+    color: @Delta;
   }
 
   &.other.attribute-name {
-    color: @orange;
+    color: @Grif;
 
     &.id {
-      color: white;
+      color: @Maine;
     }
   }
 }
 
 .keyword {
-  color: @purple;
+  color: @Doc;
 
   &.control {
-    color: @purple;
+    color: @Doc;
   }
 
   &.operator {
@@ -78,27 +81,27 @@
   }
 
   &.other.special-method {
-    color: white;
+    color: @Maine;
   }
 
   &.other.unit {
-    color: @orange;
+    color: @Grif;
   }
 }
 
 .storage {
-  color: @purple;
+  color: @Doc;
 }
 
 .constant {
-  color: @orange;
+  color: @Grif;
 }
 
 .variable {
-  color: @red;
+  color: @Sarge;
 
   &.interpolation {
-    color: darken(@red, 10%);
+    color: darken(@Sarge, 10%);
   }
 
   &.parameter.function {
@@ -108,14 +111,14 @@
 
 .support {
   &.class {
-    color: @light-orange;
+    color: @York;
   }
 
   &.function  {
-    color: @cyan;
+    color: @Tucker;
 
     &.any-method {
-      color: white;
+      color: @Maine;
     }
   }
 }
@@ -133,15 +136,15 @@
   }
 
   &.regexp {
-    color: @cyan;
+    color: @Tucker;
 
     .source.ruby.embedded {
-      color: @orange;
+      color: @Grif;
     }
   }
 
   &.other.link {
-    color: @red;
+    color: @Sarge;
   }
 }
 
@@ -160,45 +163,45 @@
 
     &.heading,
     &.identity {
-      color: white;
+      color: @Maine;
     }
 
     &.bold {
-      color: @light-orange;
+      color: @York;
       font-style: bold;
     }
 
     &.italic {
-      color: @purple;
+      color: @Doc;
       font-style: italic;
     }
   }
 
   &.section.embedded {
-    color: darken(@red, 10%);
+    color: darken(@Sarge, 10%);
   }
 
 }
 
 .meta {
   &.class {
-    color: @light-orange;
+    color: @York;
   }
 
   &.link {
-    color: @orange;
+    color: @Grif;
   }
 
   &.require {
-    color: white;
+    color: @Maine;
   }
 
   &.selector {
-    color: @purple;
+    color: @Doc;
   }
 
   &.separator {
-    background-color: @gray;
+    background-color: @Warthog;
     color: @syntax-text-color;
   }
 }
@@ -209,48 +212,48 @@
 
 .markup {
   &.bold {
-    color: @orange;
+    color: @Grif;
     font-style: bold;
   }
 
   &.changed {
-    color: @purple;
+    color: @Doc;
   }
 
   &.deleted {
-    color: @red;
+    color: @Sarge;
   }
 
   &.italic {
-    color: @purple;
+    color: @Doc;
     font-style: italic;
   }
 
   &.heading .punctuation.definition.heading {
-    color: white;
+    color: @Maine;
   }
 
   &.inserted {
-    color: @green;
+    color: @Delta;
   }
 
   &.list {
-    color: @red;
+    color: @Sarge;
   }
 
   &.quote {
-    color: @orange;
+    color: @Grif;
   }
 
   &.raw.inline {
-    color: @green;
+    color: @Delta;
   }
 }
 
 .source.gfm .markup {
   -webkit-font-smoothing: auto;
   &.heading {
-    color: @green;
+    color: @Delta;
   }
 }
 
