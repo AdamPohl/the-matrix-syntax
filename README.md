@@ -1,4 +1,5 @@
-# The Matrix-syntax theme
+
+# The Matrix - a syntax theme
 
 This theme is based off the matrix theme from cloudsagemath.  This is the first syntax theme that I have made and I now want to share it with the rest of the atom users.
 
