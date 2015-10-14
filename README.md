@@ -4,11 +4,11 @@
 This theme is based off the matrix theme from cloudsagemath.  This is the first syntax theme that I have made and I now want to share it with the rest of the atom users.
 
 
-![]({{site.baseurl}}/res/Colours screenshot.png)
+![](/res/Colours screenshot.png)
 
 As you can see from the above picture I am a fan of the web show RvB and have labeled my colours accordingly.
 
-![]({{site.baseurl}}/res/example page screenshot.png)
+![](/res/example page screenshot.png)
 
 This is what a typical screen would look like with this syntax theme enabled.
 
