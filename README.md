@@ -5,7 +5,7 @@ This theme is based off the matrix theme from cloudsagemath.  This is the first 
 
 
 As you can see from the picture below I am a fan of the web show RvB and have labeled my colours accordingly.
-![](/res/Colours screenshot.png)
+![](/res/colours screenshot.png)
 
 Below is what a typical screen would look like with me his syntax theme enabled.
 ![](/res/example page screenshot.png)
