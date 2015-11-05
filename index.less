@@ -1,5 +1,6 @@
 @import "syntax-variables";
-:host, .atom-text-editor, .atom-text-editor {
+
+atom-text-editor, :host {
   background-color: @syntax-background-color;
   color: @syntax-text-color;
 }
@@ -154,9 +155,18 @@
       color: @light-gray;
     }
 
-    &.string,
-    &.variable,
-    &.parameters,
+    &.string{
+      color: @syntax-text-color;
+    }
+
+    &.variable{
+      color: @syntax-text-color;
+    }
+
+    &.parameters{
+      color: @syntax-text-color;
+    }
+
     &.array {
       color: @syntax-text-color;
     }
