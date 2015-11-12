@@ -3,6 +3,13 @@
   "theme": "syntax",
   "version": "0.3.2",
   "description": "A syntax theme similar to the matrix theme on cloudsagemath",
+  "keywords": [
+    "syntax",
+    "theme",
+    "dark",
+    "cloudsagemath",
+    "The-Matrix"
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/Huaraz2/the-matrix-syntax.git"

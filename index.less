@@ -1,36 +1,49 @@
-@import "syntax-variables";
+@import "./styles/syntax-variables.less";
 
 atom-text-editor, :host {
   background-color: @syntax-background-color;
   color: @syntax-text-color;
-}
+  .is-focused .cursor {
+      border-color: @Simmons;
+    }
 
-.atom-text-editor.is-focused .cursor {
-  border-color: @Simmons;
-}
+  // This looks after the colour of the line you are writing in.
+  .is-focused, .line.cursor-line {
+     background-color: @Caboose;
+  }
 
-// This looks after the word selection.
-.atom-text-editor.is-focused :host, .selection, .region {
-  background-color: @syntax-selection-color;
-}
+  // This looks after the word selection.
+  .selection .region {
+    background-color: @syntax-selection-color;
+	  background: repeating-linear-gradient(0deg, @Tex, @Tex 1px, @syntax-selection-color 2px, @syntax-selection-color 1px);
+	  border-right: 2px solid @Locus;
+	  border-left: 2px solid @Locus;
+  }
 
-// This looks after the colour of the line you are writing in.
- .atom-text-editor.is-focused, .line.cursor-line {
-   background-color: @Caboose;
-}
+  .is-focused, .line-number.cursor-line-no-selection{
+    background-color: @Locus;
+  }
 
-.atom-text-editor.is-focused, .line-number.cursor-line-no-selection{
-  background-color: @syntax-gutter-border-color;
-}
+  .gutter {
+    background-color: @syntax-gutter-background-color;
+    border-right: 5px solid @syntax-gutter-border-color;
+    color: @syntax-gutter-text-color;
 
-.atom-text-editor, .gutter {
-  background-color: @syntax-gutter-background-color;
-  border-right: 5px solid @syntax-gutter-border-color;
-  color: @syntax-gutter-text-color;
-}
+    .line-number {
+     &.cursor-line {
+        background-color: @syntax-gutter-border-color;
+        color: @Caboose;
+     }
 
-.comment {
-  color: @light-gray;
+      &.cursor-line-no-selection {
+        color: @syntax-gutter-text-color;
+      }
+    }
+  }
+
+  .comment {
+    color: @Washington;
+  }
 }
 
 .entity {
@@ -152,7 +165,7 @@ atom-text-editor, :host {
 .punctuation {
   &.definition {
     &.comment {
-      color: @light-gray;
+      color: @Washington;
     }
 
     &.string{
