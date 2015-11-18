@@ -6,4 +6,4 @@ notifications:
     on_success: never
     on_failure: change
 
-script: 'curl -s https://raw.githubusercontent.com/atom/ci/master/build-theme.sh | sh'
+script: 'curl -s https://raw.githubusercontent.com/atom/ci/master/build-package.sh | sh'
