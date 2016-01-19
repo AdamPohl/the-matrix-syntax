@@ -19,15 +19,11 @@ atom-text-editor, :host {
 	  border-right: 2px solid @Sarge;
 	  border-left: 2px solid @Sarge;
   }
-
-  .is-focused, .line-number.cursor-line-no-selection{
-    background-color: @Locus;
-  }
-
+  
   .gutter {
-    background-color: @syntax-gutter-background-color;
+    background-color: darken(@syntax-gutter-background-color, 6%);
     border-right: 5px solid @syntax-gutter-border-color;
-    color: @syntax-gutter-text-color;
+    color: lighten(@syntax-gutter-text-color, 2%);
 
     .line-number {
      &.cursor-line {
@@ -36,7 +32,7 @@ atom-text-editor, :host {
      }
 
       &.cursor-line-no-selection {
-        color: @syntax-gutter-text-color;
+        color: @syntax-gutter-text-color-unslected;
       }
     }
   }
