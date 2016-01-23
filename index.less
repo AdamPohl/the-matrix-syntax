@@ -12,6 +12,10 @@ atom-text-editor, :host {
      background-color: @Caboose;
   }
 
+  .is-focused, .line-number.cursor-line-no-selection{
+    background-color: @Locus
+  }
+
   // This looks after the word selection.
   .selection .region {
     background-color: @syntax-selection-color;
@@ -19,7 +23,7 @@ atom-text-editor, :host {
 	  border-right: 2px solid @Sarge;
 	  border-left: 2px solid @Sarge;
   }
-  
+
   .gutter {
     background-color: darken(@syntax-gutter-background-color, 6%);
     border-right: 5px solid @syntax-gutter-border-color;
