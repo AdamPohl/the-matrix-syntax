@@ -1,7 +1,7 @@
 {
   "name": "the-matrix-syntax",
   "theme": "syntax",
-  "version": "0.5.1",
+  "version": "0.6.0",
   "description": "A syntax theme similar to the matrix theme on cloudsagemath",
   "keywords": [
     "syntax",
